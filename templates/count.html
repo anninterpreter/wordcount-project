@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count Page</title>
+</head>
+<body>
+	<h1>Count</h1>
+	<h2>THERE ARE {{ count }} words in your text</h2>
+	<h2>Your Text</h2>
+	<h3>{{ fulltext }}</h3>
+	
+	{% for word, count in sorted %}
+
+	{{word}} - {{count}}
+	<br>
+
+
+
+	{% endfor %}
+</body>
+</html>
